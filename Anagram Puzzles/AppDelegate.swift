@@ -13,9 +13,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Run tests on anagram.
+        let word = "Shovel"
+
+        print("Testing Failure. \n\n")
+        WordsAssistant.sharedInstance.test(word: word, input: "god")
+
+        print("\n\nTesting Success. \n\n")
+        WordsAssistant.sharedInstance.test(word: word, input: word)
+
+        print("\n\nTesting Easier Difficulty. \n\n")
+        // The higher the difficulty count will make the word easier to determine, a count of zero allows for full word shuffle
+        // difficulty must be higher than 2 and less then the character count.
+        WordsAssistant.sharedInstance.test(word: word, input: word, difficulty: 3)
+
+        print("\n\nFINISHED TESTS !!!")
+        
         return true
     }
 

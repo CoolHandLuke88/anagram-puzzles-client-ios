@@ -14,6 +14,8 @@
 		7704AFA11E6F62C200201AFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7704AF9F1E6F62C200201AFB /* LaunchScreen.storyboard */; };
 		7704AFAC1E6F62C300201AFB /* Anagram_PuzzlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704AFAB1E6F62C300201AFB /* Anagram_PuzzlesTests.swift */; };
 		7704AFB71E6F62C300201AFB /* Anagram_PuzzlesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704AFB61E6F62C300201AFB /* Anagram_PuzzlesUITests.swift */; };
+		7704AFC51E6F62FE00201AFB /* Words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7704AFC41E6F62FE00201AFB /* Words.plist */; };
+		7704AFC71E6F636400201AFB /* WordsAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704AFC61E6F636400201AFB /* WordsAssistant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		7704AFB21E6F62C300201AFB /* Anagram PuzzlesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anagram PuzzlesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7704AFB61E6F62C300201AFB /* Anagram_PuzzlesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anagram_PuzzlesUITests.swift; sourceTree = "<group>"; };
 		7704AFB81E6F62C300201AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7704AFC41E6F62FE00201AFB /* Words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Words.plist; sourceTree = "<group>"; };
+		7704AFC61E6F636400201AFB /* WordsAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsAssistant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				7704AF961E6F62C200201AFB /* AppDelegate.swift */,
-				7704AF981E6F62C200201AFB /* ViewController.swift */,
 				7704AF9A1E6F62C200201AFB /* Main.storyboard */,
-				7704AF9D1E6F62C200201AFB /* Assets.xcassets */,
-				7704AF9F1E6F62C200201AFB /* LaunchScreen.storyboard */,
-				7704AFA21E6F62C200201AFB /* Info.plist */,
+				7704AF981E6F62C200201AFB /* ViewController.swift */,
+				77639D9F1E6F9A6800D9BA06 /* AnagramGenerator */,
+				77639D9E1E6F9A4300D9BA06 /* Resources */,
 			);
 			path = "Anagram Puzzles";
 			sourceTree = "<group>";
@@ -123,6 +126,25 @@
 				7704AFB81E6F62C300201AFB /* Info.plist */,
 			);
 			path = "Anagram PuzzlesUITests";
+			sourceTree = "<group>";
+		};
+		77639D9E1E6F9A4300D9BA06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7704AF9D1E6F62C200201AFB /* Assets.xcassets */,
+				7704AF9F1E6F62C200201AFB /* LaunchScreen.storyboard */,
+				7704AFA21E6F62C200201AFB /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		77639D9F1E6F9A6800D9BA06 /* AnagramGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				7704AFC41E6F62FE00201AFB /* Words.plist */,
+				7704AFC61E6F636400201AFB /* WordsAssistant.swift */,
+			);
+			name = AnagramGenerator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7704AFC51E6F62FE00201AFB /* Words.plist in Resources */,
 				7704AFA11E6F62C200201AFB /* LaunchScreen.storyboard in Resources */,
 				7704AF9E1E6F62C200201AFB /* Assets.xcassets in Resources */,
 				7704AF9C1E6F62C200201AFB /* Main.storyboard in Resources */,
@@ -260,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7704AF991E6F62C200201AFB /* ViewController.swift in Sources */,
+				7704AFC71E6F636400201AFB /* WordsAssistant.swift in Sources */,
 				7704AF971E6F62C200201AFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +527,7 @@
 				7704AFBD1E6F62C300201AFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7704AFBE1E6F62C300201AFB /* Build configuration list for PBXNativeTarget "Anagram PuzzlesTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +536,7 @@
 				7704AFC01E6F62C300201AFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7704AFC11E6F62C300201AFB /* Build configuration list for PBXNativeTarget "Anagram PuzzlesUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +545,7 @@
 				7704AFC31E6F62C300201AFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
